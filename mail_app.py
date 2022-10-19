@@ -53,7 +53,7 @@ Please find below the Report
 
 
 def send_mail(
-    SENDER_EMAIL, RECEIVER_EMAIL, MAIL_PASSWORD, subject, content, file_names, body
+    SENDER_EMAIL, RECEIVER_EMAIL, MAIL_PASSWORD, subject, file_names, body
 ):
     msg = EmailMessage()
     msg["From"] = SENDER_EMAIL
@@ -61,7 +61,6 @@ def send_mail(
     # msg["Cc"] = CC_EMAIL
     # msg["Bcc"] = BCC_Email
     msg["Subject"] = subject
-    msg.set_content(content)
     msg.add_alternative(body, subtype="html")
     # for file_name in file_names:
     #     mime_type, encoding = guess_type(file_name)
@@ -83,15 +82,7 @@ def send_mail(
 
 RECEIVER_EMAIL = "cybercreed010@gmail.com"
 subject = "Test Multiple  Attachment subject"
-content = """
-Hi Aditya
-
-this mail is just the test email
-
-Thanks and regards,
-Aditya Pratap
-"""
-
+#file_names = list of file you want to send as attachement | remove it if you dont want to have any attachments
 send_mail(
-    SENDER_EMAIL, RECEIVER_EMAIL, MAIL_PASSWORD, subject, content, file_names, body
+    SENDER_EMAIL, RECEIVER_EMAIL, MAIL_PASSWORD, subject, file_names, body
 )
