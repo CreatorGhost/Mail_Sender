@@ -7,10 +7,10 @@ import pandas as pd
 from pretty_html_table import build_table
 
 ###################### IMoprtant Note   ######################
-#     Make sure to turn off Google less secure app {its required in order to make this code work}
+#     Make sure to turn on 2-factor authentication and get app passsword from Google its required in order to make this code work}
 
 
-# put your email id and password in the credentials.json file in current directory
+# put your email id and app password in the credentials.json file in current directory
 
 file = open("credentials.json")
 
