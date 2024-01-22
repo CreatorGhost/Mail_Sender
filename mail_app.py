@@ -80,7 +80,7 @@ def send_mail(
     print("Mail Sent Sucessfully")
 
 
-RECEIVER_EMAIL = "cybercreed010@gmail.com"
+RECEIVER_EMAIL = "reacevermail@gmail.com"
 subject = "Test Multiple  Attachment subject"
 #file_names = list of file you want to send as attachement | remove it if you dont want to have any attachments
 send_mail(
